@@ -161,6 +161,14 @@ Added seperate function sendData to trigger to send data to server (it won't sen
 		
 	};
 	
+	//function call to unload object
+	$.jRecorder.unload = function()
+	{
+		delete htmlObj;
+		$('#' + jRecorderSettings['recorderlayout_id']).remove();
+	}
+	
+	
 	//function call to start a recording
 	$.jRecorder.record = function(max_time){
 		
